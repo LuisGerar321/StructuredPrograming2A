@@ -16,18 +16,33 @@ def isEven( aNumber  ):
         else:
                 return False
                 # print("it is odd!")
+
+## isPrime
+
         
 if __name__  == "__main__":
         # print(f' La suma de dos numeros =  {  addToNumbers(  int(ag[1]  ), int(ag[2])   )   } ')
         n1 = int(  input(   'Dame numero 1:\t'   )   )
         n2 = int( input('Dame numero 2:\t'))
 
+
         # print(  f'  La suma de dos numeros =  {  addToNumbers( n1, n2     )  } '  )
-
         # answer = isEven(    addToNumbers( n1, n2) )
-
         if(   isEven(    addToNumbers( n1, n2) )   ):
                 print( f'N1: "{n1}"  and N2: "{n2}"  are your lucky numbers!'   )
         else:
                 print(  f'N1: "{n1}" and N2: "{n2}" are NOT your lucky numbers!'   )
+
+
+        # if( isPrime(  n3   ) ):
+        #         print("n3 is prime")
+        # else:
+        #         print("n3 is not prime")
+
+        # if( isPrime(  n4   ) ):
+        #         print("n4 is prime")
+        # else:
+        #         print("n4 is not prime")
+
+        
                 
