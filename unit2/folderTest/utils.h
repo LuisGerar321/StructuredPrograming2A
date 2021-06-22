@@ -1,6 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #define pi 3.1416
+
+typedef struct  array
+{
+        int dirArray[5];
+}Array;
+
 
 
 int libInteger  =  24;
@@ -43,10 +50,53 @@ void modifyVariablesAddress( int* dir1   ,  int* dir2, int multiplo ){
         ShowIntValueAdress(dir2);
         *dir1 =  *dir1 * multiplo;
         *dir2 =  *dir2 * multiplo;
-
         return;
 }
+void swap( int* ptr1, int* ptr2   ){
+        int temp = *ptr1; 
+        *ptr1 = *ptr2;
+        *ptr2 = temp;
+        return;
+        printf("Hola munda!");
+}
+
+// void swapGobal(){
+//         int temp = myVar1;
+//         myVar1 = myVar2;
+//         myVar2 = temp;
+//         return;
+// }
+void fillArray( int array[],  size_t tam ){
+        for (size_t i = 0; i < tam; i++)
+        {
+                array[i] = i*2;
+        }
+        return;
+};
 
 
 
+
+
+
+void printArray1D( int array[], size_t tam   ){
+
+        for (size_t i = 0; i < tam; i++)
+        {
+                printf( "%i\n", array[i] );
+                
+        }
+        return;
+        
+}
+
+Array* aFunction( ){
+        // int unArreglo[5] = {1,5,6,7,8};
+        Array* unArrayType = (Array*)malloc(sizeof(Array) );
+        unArrayType->dirArray[0] = 17;
+        unArrayType->dirArray[1] = 15;
+        unArrayType->dirArray[2] = 19;
+        // unArrayType->dirArray[1] =  10; 
+        return unArrayType;
+}
 

@@ -1,10 +1,14 @@
 #include <stdio.h>
-#include "/mnt/d/StructuredPrograming2A/unit2/folderTest/utils.h"
+
 #include <stdlib.h>
 
 
 int var1 = 10;
 int var2  = 20;
+
+int myVar1 = 30;
+int myVar2 = 50;
+#include "/mnt/d/StructuredPrograming2A/unit2/folderTest/utils.h"
 
 
 int main ( int argc, char** argv){
@@ -43,6 +47,11 @@ int main ( int argc, char** argv){
         printf("var1=  %d, var2= %d\n",  var1, var2 );
         //Dentro del codigo debe ir algo asi:
                 // *0x7ff150a01018 = 1000;
+
+        swap( &var1, &var2);
+        swapGobal();
+        printf("myVar1=  %d, myVar2= %d\n",  myVar1, myVar2 );
+
 
         return 0;
 }
