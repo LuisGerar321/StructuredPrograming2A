@@ -5,7 +5,10 @@
 
 typedef struct  array
 {
-        int dirArray[5];
+        int dirArray[2];
+        float aFloat;
+        float * aFloatPointer;
+
 }Array;
 
 
@@ -52,7 +55,7 @@ void modifyVariablesAddress( int* dir1   ,  int* dir2, int multiplo ){
         *dir2 =  *dir2 * multiplo;
         return;
 }
-void swap( int* ptr1, int* ptr2   ){
+void swap( int* ptr1, int* ptr2){
         int temp = *ptr1; 
         *ptr1 = *ptr2;
         *ptr2 = temp;
@@ -66,6 +69,7 @@ void swap( int* ptr1, int* ptr2   ){
 //         myVar2 = temp;
 //         return;
 // }
+
 void fillArray( int array[],  size_t tam ){
         for (size_t i = 0; i < tam; i++)
         {
@@ -73,6 +77,9 @@ void fillArray( int array[],  size_t tam ){
         }
         return;
 };
+
+
+
 
 
 
@@ -90,13 +97,17 @@ void printArray1D( int array[], size_t tam   ){
         
 }
 
-Array* aFunction( ){
+
+
+Array* returnArray( ){
         // int unArreglo[5] = {1,5,6,7,8};
         Array* unArrayType = (Array*)malloc(sizeof(Array) );
+        printf("addres unArrayType: %p, unArrayType = %p \n",  &unArrayType, unArrayType );
+
         unArrayType->dirArray[0] = 17;
         unArrayType->dirArray[1] = 15;
-        unArrayType->dirArray[2] = 19;
-        // unArrayType->dirArray[1] =  10; 
         return unArrayType;
 }
+
+
 
