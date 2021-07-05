@@ -24,7 +24,7 @@ int main(){
         Array* myArray =    returnArray();
         printf(  "%d\n", myArray->dirArray[1]  );
         
-        // malloc(), realloc, calloc();
+        //malloc(), realloc, calloc(),  free();
         
 
         return 0;
