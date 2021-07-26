@@ -15,6 +15,23 @@ typedef struct utils {
         
 }UTILS;
 
+
+typedef struct robot {
+        char* name;
+        char * type;
+        float height;
+        float weight;
+        int wheels;
+        int degreesOfFreedom;
+        void (*sayHelloToRobot) (struct robot);
+        
+} ROBOT;
+
+void sayHelloToRobot ( struct robot aRobot){
+        printf("Hello %s\n" , aRobot.name   );
+}
+
+
 typedef struct  array
 {
         int dirArray[2];

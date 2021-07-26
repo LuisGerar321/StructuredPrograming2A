@@ -4,33 +4,35 @@
 #include "./folderTest/utils.h"
 #include "stdbool.h"
 
+void SecurityCameraA( void (*__) (int number),  int  EmergencyNumber );
+void SecurityCameraB();
+
 void callToNumber(int number){
-        //Logica compleja para llamar a un numero//
+
         printf("Llamando al %d...!\n", number   );
 }
-//Declarando
-void SecurityCamera( void (*cb) (int number),  int  EmergencyNumber );
-void SecurityCamera2();
 
 int main(){
-        
-        // for(;;){
-                SecurityCamera( callToNumber, 911  );
-
-        // }
+        //Some code to call functions
         return 0;
 }
-//Defi
-void SecurityCamera( void (*cb) (int number), int EmergencyNumber   ){
+
+void SecurityCameraB(){
+
         //Logica Compleja//
         bool thief = false;
         if(thief){ //Si detecta ladron debe hacer algo!
                 // Ejecutar un calback
-                callToNumber(EmergencyNumber);
+                callToNumber(999);
+        }
+}
+void SecurityCameraA( void (*__) (int number), int EmergencyNumber   ){
+        //Logica Compleja//
+        bool thief = false;
+        if(thief){ //Si detecta ladron debe hacer algo!
+                // Ejecutar un calback
+                __(EmergencyNumber);
         }
 }
 
-void SecurityCamera2(){
 
-        callToNumber(999);
-}
