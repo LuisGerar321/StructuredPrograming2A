@@ -1,6 +1,10 @@
 #include <stdio.h>
-#include "utils.h" 
 #include <stdlib.h>
+//* Put your libryries here //
+// e.g. #include "selectRandomLine.h" //This library contains selectRandomLine done by Amaury
+// #include "encodeCountry.h" //This library contains  encodeCountry done by Erubiel
+// ...
+
 enum Mode{
         easy = 1,
         medium = 2,
