@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-//* Put your libryries here //
-// e.g. #include "selectRandomLine.h" //This library contains selectRandomLine done by Amaury
-// #include "encodeCountry.h" //This library contains  encodeCountry done by Erubiel
-// ...
+#include <stdbool.h>
+#include "printFileList.h"
+#include "sleep.h"
+#include "len.h"
+//#include "selectRandomLine.h"
+//#include "len.h"
+//#include "compareIndexCharacterString.h"
 
 enum Mode{
         easy = 1,

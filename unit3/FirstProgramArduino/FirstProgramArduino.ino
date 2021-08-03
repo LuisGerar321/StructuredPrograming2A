@@ -18,8 +18,6 @@ void loop() {
 
   BinaryLed(2);
 
-
-
   Serial.println("Hello world");
   Serial.println(secondVar);
 }
